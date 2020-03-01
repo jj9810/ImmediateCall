@@ -4,7 +4,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 
-public class PacakgeReceiver extends BroadcastReceiver {
+public class PackageReceiver extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent){
         String action = intent.getAction();
