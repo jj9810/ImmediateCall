@@ -12,5 +12,6 @@ MIT 라이선스에 따라 배포합니다.
 * `lockscreen`: 잠금 화면
 * `managecontact`: 연락처 관리 화면
 * `receiver`: 리시버
+* `util`: 유틸리티
 
 ## 참조
