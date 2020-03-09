@@ -21,7 +21,7 @@
         </activity>
 
         <receiver
-            android:name=".receiver.PackageReceiver"
+            android:name=".util.receiver.PackageReceiver"
             android:exported="true">
             <intent-filter>
                 <!--<action android:name="android.intent.action.PACKAGE_ADDED"/>-->
@@ -31,7 +31,7 @@
         </receiver>
 
         <receiver
-            android:name=".receiver.BootReceiver"
+            android:name=".util.receiver.BootReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>

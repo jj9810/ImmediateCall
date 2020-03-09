@@ -1,4 +1,4 @@
-package io.github.cheese98.immediatecall.receiver;
+package io.github.cheese98.immediatecall.util.receiver;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
