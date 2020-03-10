@@ -5,10 +5,13 @@ import android.content.Context
 import android.content.Intent
 import android.telephony.PhoneStateListener
 import android.telephony.TelephonyManager
+import androidx.core.content.ContextCompat.startActivity
+import io.github.cheese98.immediatecall.lockscreen.LockScreenActivity
+import io.github.cheese98.immediatecall.lockscreen.LockScreenService
 
-class ScreenReceiver : BroadcastReceiver (){
+class ScreenReceiver (private val lsService : LockScreenService) : BroadcastReceiver (){
     // 지연 초기화시 오류 발생으로 인해 수정
-    private val tm: TelephonyManager? = null
+    private var tm: TelephonyManager? = null
     private var phoneState: Int? = null
 
     override fun onReceive(context: Context?, intent: Intent) {
@@ -17,7 +20,7 @@ class ScreenReceiver : BroadcastReceiver (){
             tm?.listen(phoneListener, PhoneStateListener.LISTEN_CALL_STATE);
         }
         if(phoneState == TelephonyManager.CALL_STATE_IDLE){
-            startLockScreenActivity()
+            lsService.startLockScreenActivity()
         }
     }
     private val phoneListener = object : PhoneStateListener(){

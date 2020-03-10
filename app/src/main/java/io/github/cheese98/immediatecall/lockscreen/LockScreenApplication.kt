@@ -1,4 +1,6 @@
 package io.github.cheese98.immediatecall.lockscreen
 
-class LockScreenApplication {
+import androidx.multidex.MultiDexApplication
+
+class LockScreenApplication : MultiDexApplication() {
 }
