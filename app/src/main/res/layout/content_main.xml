@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/appStartButton"
+        android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@id/appDescription"
@@ -20,10 +20,10 @@
         android:layout_marginTop="30dp"
         />
     <Button
-        android:id="@+id/manageContactButton"
+        android:id="@+id/manageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/appStartButton"
+        app:layout_constraintTop_toBottomOf="@+id/startButton"
         android:text="Settings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
