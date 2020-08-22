@@ -6,7 +6,7 @@ an Android application helps call someone immediately
 
 MIT 라이선스에 따라 배포합니다.
 
-## 패키지
+## Packages
 `ImmediateCall`의 패키지 목록입니다.
 
 * `lockscreen`: 잠금 화면
@@ -14,4 +14,5 @@ MIT 라이선스에 따라 배포합니다.
 * `receiver`: 리시버
 * `util`: 유틸리티
 
-## 참조
+## References
+* https://github.com/hanmolee/LockScreenKotlinExample
