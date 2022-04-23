@@ -4,5 +4,5 @@
     <string name="start_button">startButton</string>
     <string name="manage_button">manageButton</string>
     <string name="start_button_text">START</string>
-    <string name="manage_button">MANAGE</string>
+    <string name="manage_button_text">MANAGE</string>
 </resources>
